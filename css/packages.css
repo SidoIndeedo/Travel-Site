@@ -1,0 +1,74 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  width: 102%;
+  left: 2%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 27px;
+}
+
+.image-cards {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(1 ,1fr 1fr 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  /* height: 820px; */
+  /* height: 100%; */
+  display: block;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: 0px -10px;
+}
+
+.card-content {
+  padding: 15px;
+  position: relative;
+  /* top: -90px; */
+  top: 0px;
+  transition: top 0.5s;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+.card:hover .card-content{
+  top: -85px;
+}

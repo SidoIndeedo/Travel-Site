@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet" href="css/left.css">
+  <link rel="stylesheet" href="css/center.css">
+  <link rel="stylesheet" href="css/packages.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  
+  <title>Document</title>
+</head>
+<body style="overflow-x:hidden; padding-bottom: 9000px; background-color: #fbfbfa;">
+  <div class="navbar">
+
+    <div class="search">
+      <form class="navbar-search">
+        <input type="search" placeholder="Search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+ 
+    <div class="user-overview">
+      
+      <div class="notification">
+        <img src="icons/navbar/notification.png" class="notification-png">
+      </div>
+
+    <div class="user">
+      <img src="icons/navbar/pfp.png" class="pfp">
+      
+      <div class="user-info">
+        <p class="user-name">Sido Indeedo</p>
+      </div> 
+    
+    </div>
+
+
+    </div>
+  </div>
+
+  <div class="sidebar">
+    
+    <div class="sidebar-company-logo">
+      <img src="/icons/sidebar/logo.webp" class="comp-logo">
+    </div>
+    
+    <div class="basic">
+      <p class="basic-heading">Basic</p>
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="icons/sidebar/dashboard.png" class="basic-icon">
+        Overview
+      </button>
+
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="icons/sidebar/calendar.png" class="basic-icon">
+        Booking
+      </button>
+
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="/icons/sidebar/favourite.png" class="basic-icon">
+        Favourite
+      </button>
+
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="/icons/sidebar/payment.png" class="basic-icon ">
+        Payment
+      </button>
+
+    </div>
+
+    <div class="basic">
+      <p class="basic-heading">Support</p>
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="icons/sidebar/support.png" class="basic-icon">
+        Help
+      </button>
+      
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="icons/sidebar/report.png" class="basic-icon">
+        Report
+      </button>
+
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="/icons/sidebar/setting.png" class="basic-icon">
+        Settings
+      </button>
+
+    </div>
+    
+    <div class="basic">
+      <p class="basic-heading">Engagement</p>
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="icons/sidebar/support.png" class="basic-icon">
+        Statistics
+      </button>
+
+      <button class="basic-content" onclick="toggleGrayScale(this)">
+        <img src="icons/sidebar/report.png" class="basic-icon">
+        Rewards
+      </button>
+    </div>
+    
+    <div class="promotion">
+      <button class="promo-btn"><img src="#" class="promo-img"></button>
+    </div>
+    
+    <div class="logout">
+      <button class="logout-btn"><img src="/icons/sidebar/logout.png" class="logout-img">Log out</button>
+    </div>
+
+  </div>
+
+  <div class="main">
+    
+    <div class="reccomendation">
+    
+      <div class="reco-info">
+        <p class="r-info">Travellers Spot</p><br>
+        <button class="reco-btn" onclick="toogleChangeReco(this)">Popular</button>
+        <button class="reco-btn" onclick="toogleChangeReco(this)">Near Me</button>
+        <button class="reco-btn" onclick="toogleChangeReco(this)">Special Offer</button>
+
+        <button class="reco-show-all" onclick="toogleChangeReco(this)">Show All</button>
+      </div>
+
+      <div class="reco-photo-container">
+
+        <div class="slide">
+
+          <div class="item" style="background-image: url('/main-popular/switzer.jpg');">
+
+            <div class="content">
+
+              <div class="name" class="">switzer</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(/main-popular/maldives.jpg);">
+
+            <div class="content">
+
+              <div class="name" class="">Maldives</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(/main-popular/LA.jpg);">
+
+            <div class="content">
+
+              <div class="name" class="">LA</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(/main-popular/greece.jpg);">
+
+            <div class="content">
+
+              <div class="name" class="">Greece</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(/main-popular/paris.jpg);">
+
+            <div class="content">
+
+              <div class="name" class="">Paris</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+      
+          <div class="item" style="background-image: url(/main-popular/cambodia.avif);">
+
+            <div class="content">
+
+              <div class="name" class="">Cambodia</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+
+      
+          <div class="item" style="background-image: url(/main-popular/bangkok.jpg);">
+
+            <div class="content">
+
+              <div class="name" class="">bangkok</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(/main-popular/bali.jpg);">
+
+            <div class="content">
+
+              <div class="name" class="">Bali</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at nemo quas perspiciatis, architecto minima. Iusto iure voluptas laborum rem doloremque explicabo ad voluptatibus obcaecati aspernatur mollitia corrupti, provident recusandae.</div>
+                <button>See more</button>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <button class="prev"><i class="fa-solid fa-arrow-left">&#8592;</i></button>
+          <button class="next"><i class="fa-solid fa-arrow-right">&#8594;</i></button>
+      </div>
+
+
+      </div>
+    </div>
+    
+
+    <div class="container">
+      <p class="heading" >Packages</p>
+    
+      <div class="image-cards">
+        <div class="card">
+          <img src="/main-packages/himachal.jpg" class="himachal-img">
+          <div class="card-content">
+            <h2 class="card-title">Himachal</h2>
+            <p class="card-description">4 different states in himachal</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="main-packages/lakshdweep.jpg" alt="Placeholder Image">
+          <div class="card-content">
+            <h2 class="card-title">Lakshdweep</h2>
+            <p class="card-description">RS50,000 with flights inclusive</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="main-packages/ladakh.jpg" alt="Placeholder Image">
+          <div class="card-content">
+            <h2 class="card-title">Ladakh</h2>
+            <p class="card-description">Description for Card 3 goes here. It can be a short description of the content.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="main-packages/europe.jpg" alt="Placeholder Image">
+          <div class="card-content">
+            <h2 class="card-title">Europe</h2>
+            <p class="card-description">Description for Card 3 goes here. It can be a short description of the content.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="main-packages/russia.webp" alt="Placeholder Image">
+          <div class="card-content">
+            <h2 class="card-title">Russia</h2>
+            <p class="card-description">Description for Card 3 goes here. It can be a short description of the content.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="main-packages/japan.jpg" alt="Placeholder Image">
+          <div class="card-content">
+            <h2 class="card-title">Japan</h2>
+            <p class="card-description">Description for Card 3 goes here. It can be a short description of the content.</p>
+          </div>
+        </div>
+        
+        <!-- You can add more cards here -->
+      </div>
+    </div>
+    
+
+  </div>
+
+    
+  </div>
+
+<script src="/js/sidebar.js"></script>
+<script src="/js/content.js"></script>
+<script src="/js/navbar.js"></script>
+<script src="/js/location.js"></script>
+
+</body>
+</html>
